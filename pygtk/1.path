@@ -1,0 +1,44 @@
+--- gtkpython.py-   Wed Jan 15 20:32:00 2003
++++ gtkpython.py    Wed Jan 15 14:00:35 2003
+@@ -3,7 +3,6 @@
+ import __main__
+ import codeop
+ import keyword
+-import gtk
+ import os
+ import re
+ import readline
+@@ -11,6 +10,10 @@
+ import traceback
+ import signal
+ import sys
++if sys.version[0] == '2':
++    import pygtk
++    pygtk.require("2.0")
++import gtk
+
+ def walk_class (klass):
+     list = []
+@@ -28,8 +31,8 @@
+         self.locals = lokals
+
+         self.completions = keyword.kwlist + \
+-                            __builtins__.__dict__.keys() + \
+-                            __main__.__dict__.keys()
++                           __builtin__.__dict__.keys() + \
++                           __main__.__dict__.keys()
+     def complete (self, text, state):
+         if state == 0:
+             if "." in text:
+@@ -98,6 +101,11 @@
+
+     def run (self):
+         gtk.timeout_add (self.TIMEOUT, self.code_exec)
++        try:
++            if gtk.gtk_version[0] == 2:
++                gtk.gdk.threads_init()
++        except:
++            pass
+         gtk.mainloop ()
+
+     def code_exec (self):

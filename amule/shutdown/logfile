@@ -1,0 +1,38 @@
+2011-02-19 17:31:38: Starting aMuled 2.2.6 using wxGTK2 v2.8.10
+2011-02-19 17:31:38: Error: Failed to create a temporary file name (error 2: No such file or directory)
+2011-02-19 17:31:38: Error: can't open user configuration file.
+2011-02-19 17:31:38: 错误：信息  --- 这是您第一次运行aMule 2.2.6 ---
+
+
+如要获取使用信息，用户支持以及下载最新版本，请访问我们的首页
+www.aMule.org，或我们在 irc.freenode.net 的 IRC 频道 #aMule。
+
+欢迎您到 http://forum.amule.org 去提交错误报告
+2011-02-19 17:31:38: 文件 'crytkey.dat' 未找到，正在创建。
+2011-02-19 17:31:38: Credits: Created new RSA keypair
+2011-02-19 17:31:38: 正在载入 IP 过滤文件 ipfilter.dat 和 ipfilter_static.dat。
+2011-02-19 17:31:38: 载入 0 个IP段自 shutdown/ipfilter.dat。 丢弃了 0 行错误数据。
+2011-02-19 17:31:38: 载入 0 个IP段自 shutdown/ipfilter_static.dat。 丢弃了 0 行错误数据。
+2011-02-19 17:31:38: 配置文件中已禁止远程连接
+2011-02-19 17:31:38: MuleUDPSocket: Failed to create valid Server UDP-Socket
+2011-02-19 17:31:38: 错误：无法监听TCP端口。
+2011-02-19 17:31:38: 端口 4662 已被占用，你会成为低ID。
+2011-02-19 17:31:38: 错误：错误 端口 4662 已被占用。
+
+这意味着你会成为低ID。
+
+请检测网络设置以确保端口可用于输入输出。
+2011-02-19 17:31:38: MuleUDPSocket: Failed to create valid Client UDP-Socket
+2011-02-19 17:31:38: 正在载入 server.met 文件：shutdown/server.met
+2011-02-19 17:31:38: 找不到server.met 文件
+2011-02-19 17:31:38: 没有找到 part 文件
+2011-02-19 17:31:38: 发现 0 个已知共享文件
+2011-02-19 17:31:38: 正在连接
+2011-02-19 17:31:38: 服务器列表中没有可以连接的服务器
+2011-02-19 17:31:38: 错误：当远程连接被禁用的时，aMule服务程序无法使用，要启用远程连接，请使用标准的aMule，或使用 --ec-config选项启动amuled或在文件 ~/aMule/amule.conf 中设置选项"AcceptExternalConnections"
+2011-02-19 17:31:38: ThreadScheduler: Completed task 'AICH Syncronizing', 0 tasks remaining.
+2011-02-19 17:31:38: 只有0个Kad联系人可用，nodes.dat没有写入
+2011-02-19 17:31:38: Error: Failed to create a temporary file name (error 2: 没有那个文件或目录)
+2011-02-19 17:31:38: Error: can't open user configuration file.
+2011-02-19 17:31:38: Error: Failed to create a temporary file name (error 2: 没有那个文件或目录)
+2011-02-19 17:31:38: Error: can't open user configuration file.

@@ -1,0 +1,17 @@
+#!/bin/bash
+changekey="魔兽改键"
+fallback="还原按键"
+export SELECTION=`zenity --list --radiolist --title="魔兽改键工具" --text="选择一个命令" --column "" --column "" True "$changekey" False "$fallback"`
+if [ -z "$SELECTION" ]
+then
+        exit 0
+fi
+if [ "$SELECTION" = "$changekey" ]
+then
+        cp ~/.changekey/chgd ~/.Xmodmap
+	xmodmap ~/.Xmodmap
+elif [ "$SELECTION" = "$fallback" ]
+then
+        cp ~/.changekey/orig ~/.Xmodmap
+	xmodmap ~/.Xmodmap
+fi
